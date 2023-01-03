@@ -26,15 +26,6 @@ export default function OurWork() {
           Film Production
         </a>
       </div>
-
-      <div className="container mx-auto">
-       <video src="https://maxperience.in/wp-content/uploads/2022/07/Untitled.mp4" autoPlay="" muted="muted" controlslist="nodownload" className="float-left mr-10 h-52 w-[586px] rounded-xl" ></video>
-        <h2 className="ml-10 text-red-600 text-8xl font-bold">172 Events</h2>
-        <p className=" mt-3 leading-8 text-xl">
-          Curating the best experiences for our clients with our unique &
-          innovative 360-degree marketing services.
-        </p>
-      </div>
     </div>
   );
 }
