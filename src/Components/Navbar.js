@@ -7,7 +7,7 @@ export default function Navbar() {
     <div>
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-white-900">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="https://Google.com/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               src={mainLogo}
               className="h-12"
@@ -16,7 +16,7 @@ export default function Navbar() {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -24,27 +24,13 @@ export default function Navbar() {
             aria-controls="navbar-default"
             aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
           </button>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
               <li>
                 <Link
                   to="/"
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white text-xl"
+                  className="block my-2 ml-3 py-2 px-4 text-[#050708] text-xl hover:bg-[#27b24c] hover:text-white rounded-lg hover:text-2xl transition-all"
                   aria-current="page"
                 >
                   Home
@@ -53,15 +39,23 @@ export default function Navbar() {
               <li>
                 <Link
                   to="/about"
-                  className="block py-2 pl-3 pr-4 text-gray-700  hover:text-blue-700 md:p-0 text-xl"
+                  className="block my-2 ml-3 py-2 px-4 text-[#050708] text-xl hover:bg-[#27b24c] hover:text-white rounded-lg hover:text-2xl transition-all"
                 >
                   About Us
                 </Link>
               </li>
               <li>
+                <Link
+                  to="/services"
+                  className="block my-2 ml-3 py-2 px-4 text-[#050708] text-xl hover:bg-[#27b24c] hover:text-white rounded-lg hover:text-2xl transition-all"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
                 <a
-                  href="/"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 md:p-0 text-xl bg"
+                  href="/contact"
+                  className="block my-2 ml-3 py-2 px-4 bg-[#27b24c] text-white rounded-lg text-xl hover:text-[#050708] hover:text-2xl transition-all"
                 >
                   Contact Us
                 </a>
