@@ -1,16 +1,24 @@
-import React from 'react'
+import React from "react";
+import Homeimg from "../Assets/Images/Homeimg.jpg"
 
-export default function Video () {
+export default function Video() {
   return (
     <div>
-      <img src="https://maxperience.in/wp-content/uploads/2021/11/Website-Banner.jpg" alt="growxp banner"></img>
-      <p className='m-10 pl-10 pr-10 leading-8 text-xl'>
-      We are an experiential marketing agency with a knack for fresh ideas, passion for great adventures, 
-      and a vision to realize perfect experiences for our clients. While MAX being an abbreviated name of our 
-      parent holding Madcap Adventure Xperiences Pvt. Ltd, 
-      Maxperience as a brand symbolizes our primary aim of maximizing the experiences of our 
-      clients and the people associated with our journey.
+      <img
+        src={Homeimg}
+        alt="growxp banner"
+      ></img>
+      <p className="m-10 pl-10 pr-10 leading-8 text-xl text-[#050708]">
+        Welcome to GrowXp, your premier brand management company. We are
+        dedicated to helping established and emerging brands create, develop,
+        and maintain their identity in the market. Our team of experienced
+        professionals will work with you to create a comprehensive brand
+        strategy that will set you apart from your competitors. We specialize in
+        all aspects of brand management, including market research, brand
+        positioning, creative design, digital marketing, and public relations.
+        We look forward to helping you create an unforgettable experience for
+        your customers.
       </p>
     </div>
-  )
+  );
 }

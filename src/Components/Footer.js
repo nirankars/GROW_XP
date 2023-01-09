@@ -1,49 +1,62 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import mainLogo from "../Assets/Images/growxp.png";
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div>
-      <footer className="bg-[#A4EBF3] text-center text-xs p-3 w-full">
-        <div className="grid lg:grid-cols-3 gap-10 mx-auto my-5">
-          <img
-            src={mainLogo}
-            className="my-auto h-6 mr-3 sm:h-9"
-            alt=""
-          />
-          <p className="text-sm">
-            We are an experiential marketing agency with a knack for fresh
-            ideas, a passion for great adventures, and a vision to realize
-            perfect experiences for clients.
-          </p>
-          <div className="my-auto">
-            <FontAwesomeIcon icon={faCoffee} className="ml-2" />
-            <FontAwesomeIcon icon={faCoffee} className="ml-2" />
-            <FontAwesomeIcon icon={faCoffee} className="ml-2" />
-            <FontAwesomeIcon icon={faCoffee} className="ml-2" />
+      <footer className="bg-white text-center text-xs p-3 w-full">
+        <p className="mx-96 mb-10 mt-5 text-lg">
+          "The success of a brand lies in its ability to establish an emotional
+          connection with its customers - a connection that is built on trust,
+          reliability, and authenticity."
+        </p>
+
+        <div className="grid lg:grid-cols-3 py-4 text-lg bg-[#27b24c]">
+          <div>
+            <p>
+              {" "}
+              <FontAwesomeIcon icon={faPhone} className="mr-2" /> 7732898891
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+              Hello@growxp.com
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
+              Jaipur
+            </p>
           </div>
         </div>
-
-        <div className="grid lg:grid-cols-3 mb-5 text-sm">
-          <div>
-            <FontAwesomeIcon icon={faCoffee} className="" />
-            <p>7732898891</p>
-          </div>
-
-          <div>
-            <FontAwesomeIcon icon={faCoffee} className="" />
-            <p>Hello@growxp.com</p>
-          </div>
-
-          <div>
-            <FontAwesomeIcon icon={faCoffee} className="" />
-            <p>Jaipur</p>
-          </div>
+        <div className="bg-[#27b24c] text-lg mb-5 pb-4">
+          <Link to="">
+            <FontAwesomeIcon icon={faFacebookF} className="m-2" />
+          </Link>
+          <Link to="">
+            <FontAwesomeIcon icon={faLinkedin} className="m-2" />
+          </Link>
+          <Link to="">
+            <FontAwesomeIcon icon={faInstagram} className="m-2" />
+          </Link>
         </div>
 
-        <div className="text-gray-500">
+        <div className="text-gray-500 mt-2">
           Copyright © 2020 All Rights Reserved
         </div>
       </footer>
